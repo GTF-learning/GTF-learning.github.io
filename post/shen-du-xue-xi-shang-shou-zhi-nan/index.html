@@ -1,0 +1,250 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>深度学习上手指南 | Gridea</title>
+<link rel="shortcut icon" href="https://gtf-learning.github.io//favicon.ico?v=1638882320820">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://gtf-learning.github.io//styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="深度学习上手指南 | Gridea - Atom Feed" href="https://gtf-learning.github.io//atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="深度学习上手指南
+作者：徐嘉诚
+[TOC]
+说明
+注：本文旨在为想要入手深度学习的同学提供一个经验性的入门参考方案。困于视野和能力，必然有不足之处，不吝斧正。仅供复旦大学内部使用，版权所有。
+要（快速）上手一个一个方向或者一个小领域，一般来..." />
+    <meta name="keywords" content="机器学习" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://gtf-learning.github.io/">
+  <img class="avatar" src="https://gtf-learning.github.io//images/avatar.png?v=1638882320820" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              深度学习上手指南
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-10-07
+              </span>
+              <span>
+                6 min read
+              </span>
+              
+                <a href="https://gtf-learning.github.io/tag/ML/" class="post-tag">
+                  # 机器学习
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>深度学习上手指南<br>
+作者：徐嘉诚</p>
+<p>[TOC]</p>
+<p>说明<br>
+注：本文旨在为想要入手深度学习的同学提供一个经验性的入门参考方案。困于视野和能力，必然有不足之处，不吝斧正。仅供复旦大学内部使用，版权所有。</p>
+<p>要（快速）上手一个一个方向或者一个小领域，一般来说需要掌握一些基础知识（最基本的概念和原理）、前沿进展（近几年的研究方向与热点）和特定的工具（例如编程语言、框架）。此外，如果有能力阅读一些有价值的论文、博客，那就更好了。</p>
+<p>前提<br>
+良好的英语水平。<br>
+一定的编程经验。<br>
+基本的数学功底。例如，什么是矩阵运算，什么是联合分布，什么是导数。如果这些基本概念都没有，可能需要再补一补，但一般来说，很多课程是self-packed的。<br>
+基础知识<br>
+深度学习是机器学习的一个子方向，而机器学习又是人工智能的一个分支。</p>
+<p>机器学习<br>
+机器学习入门首推Andrew Ng在Coursera的公开课 机器学习，深入浅出。上完了这门课之后，应该对于机器学习的基本概念比较清楚了。</p>
+<p>如果你对于统计机器学习或者一些经典的方法感兴趣，推荐看李航老师的 《统计学习方法》，竞品（同类中文教材）中无出其右。</p>
+<p>如果你想再深入理解一下机器学习的来龙去脉（Ng在Coursera开的这门课是面向零基础同学开设的，难度有限），你可以参考一下斯坦福大学的机器学习课 CS229@Stanford，做好这门课的作业，把Lecture Note读个几遍，应该可以吊打至少90%的想申请机器学习或者数据科学的研究生的竞争者了。其实，市面上有太多的机器学习（和深度学习）的资源了（参考知乎问题：深度学习如何入门？），与其兴致勃勃地把它们加入你的收藏夹，不如学好任何一门。</p>
+<p>如果你学完了以上的这一两门课，就应该具备选择传统机器学习相关资料的能力了。值得一提的是，最好选一些有video、有assignment（和答案）的课程，这对于自学者尤为关键。</p>
+<p>此外，不要吝惜代码，实现，虽然不是必要的，会很大程度上加深你的理解。</p>
+<p>深度学习<br>
+深度学习的入门资源，按照从简单到困难的顺序我推荐以下几门课：</p>
+<p>UFLDL Tutorial是斯坦福大学Andrew Ng等人编纂的深度学习的入门教程，采用Matlab作为实现语言（这点似乎有些过时），而且官方自带中文版，是非常可贵的学习资料。<br>
+CS224d@Stanford是斯坦福大学博士毕业生、Salesforce首席科学家Richard Socher团队呈现的一门运用神经网络解决自然语言处理问题的课程，和CS231n应该是姐妹课程。本课程更注重RNN系列模型的运用。<br>
+CS231n@Stanford是斯坦福大学李飞飞团队呈现的一门运用神经网络解决计算机视觉问题的课程，严格来说也不需要太多基础。本课程更注重CNN系列模型的运用。<br>
+NN4ML是多伦多大学Geff Hinton教授录制的一门较为进阶的深度学习课程。如果没有一定的实战经验，可能会觉得这门课在讲天书，但有一定经验后回来看，里面藏了太多的黑科技。当然，Hinton爷爷的嗓音的确很催眠=。=<br>
+如果你顺利看完了上面的这些资源，应该已经算是20%的深度学习专家了；如果你做完了上面这些资源的Reading Material、Assignment和Lab，应该已经算是80%的深度学习专家了。到这里，你应该有能力看懂很多顶会的论文，当然这需要一定的时间。</p>
+<p>前沿进展<br>
+文献<br>
+了解一个领域最好的方式还是阅读经典的、里程碑式的文献。上个版块中的课程自带的Reading Material都是极其重要的里程碑文献，请务必仔细阅读、反复阅读！ 接下来给大家推荐深度学习一些相关的会议，排名越靠前推荐度越高：</p>
+<p>偏理论类（创新性更高，意义更大）：ICLR，NIPS，ICML<br>
+偏重应用类（一般来说创新性有限）：AAAI，IJCAI<br>
+计算机视觉：CVPR，ICCV，ECCV<br>
+自然语言处理：ACL，EMNLP，NaACL<br>
+把握好上游的论文，看下游的、应用的自然会简单很多。</p>
+<p>书籍<br>
+对于教科书，最为推荐的是Ian Goodfellow等人的Deep Learning Book，这是一本还没有出版就已经被引用几百次的教科书，价值可见一斑。 复旦大学邱锡鹏老师的神经网络与深度学习讲义是很好的中文参考资料。</p>
+<p>框架与实现<br>
+主流框架有Tensorflow，Theano，Torch，MXNet和Caffe ,下面作简单介绍：</p>
+<p>框架	编程语言	主导者	特点<br>
+Tensorflow	Python	Google	Google大力支持，新推出，效率一般<br>
+Theano	Python	Bengio等人	历史最久，Bengio等人主导，debug稍显困难<br>
+Torch	Lua	Facebook为主	FB主导，实际运用较多，较火，cv、nlp、rl通吃<br>
+MXNet	Many	Baidu, NYU, CMU...	效率较高，支持语言多，拓展性强<br>
+Caffe	Python	BerkeleyVLC	在计算机视觉中运用最广泛，不适用于NLP<br>
+一般来说，每个team会有一个大家都用的框架，具体使用要看应用环境。</p>
+<p>参考资源<br>
+编程上的问题请尽量问Google和Stackoverflow，以及各种group、论坛。用百度搜一般你就走远了：） 理论上的问题也可以Google，尽量自己思考、与同伴交流、查阅教科书。知乎上也有一些好的回答，但一般来说在上面烧掉的时间是值不回本的。</p>
+<p>常见问题<br>
+（知乎上有）好多资料、好多大神推荐的routine，我该选哪个？<br>
+答： 一般来说每个方案都有一定道理也一定会有缺陷，选一个能接受的做下去比刷知乎来的有用的多。<br>
+论文怎么看，看得好慢怎么办？<br>
+答： 英语基础其实不那么重要，因为CS的论文比英语考试的阅读要容易懂太多了，你去背红宝书学长难句是不能解决问题的，多读多思考，套路就在那里。</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://gtf-learning.github.io/post/hello-gridea/">
+              <h3 class="post-title">
+                Hello Gridea
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '98ce7175c3bf1911a840',
+    clientSecret: '2cc9d51b30c456c2ea5ef7dbd0b52ba4d9885797',
+    repo: 'gtf-learning.github.io',
+    owner: 'gtf-learning',
+    admin: ['gtf-learning'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://gtf-learning.github.io//atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
